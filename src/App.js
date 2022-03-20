@@ -1,5 +1,18 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+import {
+  createInstance,
+  OptimizelyFeature,
+  OptimizelyProvider,
+  withOptimizely
+} from '@optimizely/react-sdk';
+
+
+const optimizely = createInstance({
+  sdkKey: '<Your_SDK_Key>'
+});
 
 function App() {
   return (
