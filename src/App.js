@@ -11,7 +11,7 @@ import {
 
 
 const optimizely = createInstance({
-  sdkKey: '<Your_SDK_Key>'
+  sdkKey: process.env.REACT_APP_OPTIMIZELY_DEV_KEY
 });
 
 function App() {
